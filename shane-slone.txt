@@ -65,38 +65,89 @@ Copy the questions below into the first-lastname.txt file on your github repo - 
     .<class name> {}
 
     21. How do we select a p element with a single class of “human””?
-    p.human{}
+    .human{}
 
     22. What is a parent child selector? When would this be useful? 
     Parent child selectors are used to target an element inside of another element.  For example if you wanted to target the links inside of your nav element, you could use:
     nav a{}
 
     23. How do you select all links within a div with the class of sidebar?
-    div.sidebar a{}
+    .sidebar a{}
 
     24. What is a pseudo selector?
+    A pseudo selector is a keyword added to a selected that lets you style a specific part of the selected element.
+
     25. What do we use the change the spacing between lines?
+    line-height
+
     26. What do we use to change the spacing between letters?
+    letter-spacing
+
     27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+
     28. How do I add a 1px border around my div that is dotted and black?
+    border: 1px dotted black;
+
     29. How do I select everything on the page? 
+    *{}
+
     30. How do I write a comment in CSS?
+    /* comment */
+
     31. How do I find out what file I am in, when I am using the command line? 
+    pwd
+
     32. Using the command line - how do I see a list of files/folders in my current folder?
+    ls
+
     33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    rm <file> We have to be careful because once we delete it, it's gone forever. There is no trash can for command line.
+
     34. Why should I use version control? 
+    It allows you to have backups of code that you've written in case you need to restore an older version of the code, and it let's more then one person work on the same project and make changes and then merge them together later.
+
     35. How often should I commit to github?
+    Any time you make a big change to your code, or after 20 or 30 minutes of writing the code, comit often.
+
     36. What is the command we would use to push our repo up to github? 
+    git push origin shane-slone
+
     37. Walk me through Lambda's git flow. 
+    1. Fork the repo to make your own version.
+    2. Make sure it shows our name in front of the repo name.
+    3. Add TL as a collaborator.
+    4. Click the Code button to get the link to clone your repo.
+    5. From the terminal go to the directory where you want to put the cloned repo.
+    6. Use the git clone command to clone the repo.
+    7. Use cd command to switch to the folder of the repo you just cloned.
+    8. Use git checkout - b 'firstname-lastname' to create your own branch.
+    9. Once you have made changes to the file you use git add . to add get the changes ready to commit
+    10. git commit -m "Note about the commit"
+    11. git push -u origin branch-name to push the commits to GitHub.
+    12. Once the changes are on GitHub you can submit a pull request and add your TL to the reviwers.
 
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
-    2. What happens when an element is positioned absolutely? 
-    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
-    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
-    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+    Inline elements don't force a new line in the document, where block elements do.  A div is an example of a block element. It puts a "box" around anything inside of it, and creates a new line on the webpage.  An in line element such as a span, doesn't create that new line.
 
+    2. What happens when an element is positioned absolutely?
+    An element that is positioned absolutely is positioned realative to the nearest positioned ancestor.  If the element has no positioned ancestors, then it uses the document body and moves along with page scrolling.
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+    block: div, p, h1
+    inline: a, img
+    inline-block: button
+
+
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
+    The css box model is basically a box that wraps around every html element, made up of padding, border, and a margin.  Flexbox makes it much simpler to align items vertically and horizontally using rows and columns, and Items will flex to different sizes to fill the space, making design much easier.
 
 
    --> 
